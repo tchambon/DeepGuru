@@ -13,8 +13,14 @@ FILE_FROM = PATH/'tweet-from.csv'
 FILE_TO = PATH/'tweet-to.csv'
 
 def new_tweet(api, tweet):
-    #api.update_status(tweet)
-    print(f'PUBLISHING TWEET {tweet}')
+    try:
+        api.update_status(tweet)
+        print(f'PUBLISHING TWEET {tweet}')
+    except tweepy.TweepError as e:
+        if e.api_code == 187:
+            print('DUPLICATE TWEET')
+        else:
+            print(e)
 
 def update_tweet_lists(df_from, df_to, index):
     msg = df_from.loc[index, 'text']
