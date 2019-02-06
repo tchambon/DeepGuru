@@ -1,8 +1,8 @@
-![GIF showing the widget](https://github.com/tchambon/DeepGuru/blob/master/media/screenDeepGuru.jpg "DeepGuru picture")
-
 # DeepGuru AI
 
 DeepGuru is a twitter bot generating inspirational quotes. It uses deep learning to generate tweets.
+
+![GIF showing the widget](https://github.com/tchambon/DeepGuru/blob/master/media/screenDeepGuru.jpg "DeepGuru picture")
 
 You can check it here: [https://twitter.com/DeepGuruAI](https://twitter.com/DeepGuruAI)
 
